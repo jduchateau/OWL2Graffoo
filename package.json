@@ -1,0 +1,17 @@
+{
+    "name": "graffoo-import-drawio-plugin",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "bun run build.ts",
+        "dev": "bun run build.ts --watch"
+    },
+    "dependencies": {
+        "n3": "^1.17.2",
+        "rdf-namespaces": "^1.16.0"
+    },
+    "devDependencies": {
+        "bun-types": "latest"
+    }
+}
