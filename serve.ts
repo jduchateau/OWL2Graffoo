@@ -34,10 +34,10 @@ async function main() {
   });
 
   console.log(`✨ Server running at http://localhost:${server.port}`);
-  console.log(`🔌 Open with plugin: http://localhost:${server.port}?dev=1&demo=1&p=graffoo`);
+  console.log(`🔌 Open in dev mode: http://localhost:${server.port}?dev=1`);
   
   // Open browser
-  await $`xdg-open http://localhost:${server.port}?dev=1\&demo=1\&p=graffoo`.quiet().catch(() => {
+  await $`xdg-open http://localhost:${server.port}?dev=1`.quiet().catch(() => {
     console.log("💡 Could not auto-open browser. Please open manually.");
   });
 }

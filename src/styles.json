@@ -1,0 +1,128 @@
+[
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"Class\" style=\"graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"81.96822102864604\" height=\"44\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 81.96822102864604,
+        "h": 44,
+        "aspect": "fixed",
+        "title": "Class"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"Datatype\" style=\"graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"126.0949682107173\" height=\"43\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 126.0949682107173,
+        "h": 43,
+        "aspect": "fixed",
+        "title": "Datatype"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"ClassRestriction\" style=\"graphMlID=n5;shape=rect;rounded=1;arcsize=30;fillColor=#ffff99;strokeColor=#000000;strokeWidth=1.0;dashed=1;dashPattern=1 3\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"-5.684341886080802e-14\" width=\"134.09253405994548\" height=\"44\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 134.09253405994548,
+        "h": 44,
+        "aspect": "fixed",
+        "title": "ClassRestriction"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"instance\" style=\"graphMlID=n9;shape=ellipse;fillColor=#ff99cc;strokeColor=#000000;strokeWidth=3.0;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;align=left;spacingRight=1;spacing=17;\" vertex=\"1\" parent=\"1\"><mxGeometry y=\"1.4210854715202004e-14\" width=\"20\" height=\"20\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 20,
+        "h": 20,
+        "aspect": "fixed",
+        "title": "instance"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"endArrow=classic;html=1;textDirection=ltr;\" edge=\"1\" parent=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint as=\"sourcePoint\"/><mxPoint x=\"147.95000000000005\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"predicate\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"-0.2211\" relative=\"1\" as=\"geometry\"><mxPoint x=\"19.95\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 147.95000000000005,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "predicate"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint y=\"0.08183758898735505\" as=\"sourcePoint\"/><mxPoint x=\"151\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;objectProperty&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"-0.0174\" y=\"2\" relative=\"1\" as=\"geometry\"><mxPoint as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 151,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "objectProperty"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e7;rounded=0;endArrow=open;strokeColor=#993300;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=dash;startFill=1;endFill=1;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint y=\"0.0030703932152391644\" as=\"sourcePoint\"/><mxPoint x=\"272\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(153 , 51 , 0) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;annotationPropertyFacility&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"0.2192\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-28\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 272,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "annotationPropertyFacility"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e4;rounded=0;endArrow=open;strokeColor=#993300;strokeWidth=1.0;startArrow=dash;startFill=1;endFill=1\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint as=\"sourcePoint\"/><mxPoint x=\"277.7021484374998\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(153 , 51 , 0) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;annotationProperty&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"0.1019\" y=\"-1\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-23\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 277.7021484374998,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "annotationProperty"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e5;rounded=0;endArrow=block;strokeColor=#000080;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint as=\"sourcePoint\"/><mxPoint x=\"276\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;objectPropertyFacility&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"-0.1377\" y=\"-3\" relative=\"1\" as=\"geometry\"><mxPoint x=\"21\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 276,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "objectPropertyFacility"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e6;rounded=0;endArrow=block;strokeColor=#008000;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"/><mxPoint as=\"sourcePoint\"/><mxPoint x=\"276\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;dataPropertyFacility&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"-0.087\" y=\"3\" relative=\"1\" as=\"geometry\"><mxPoint x=\"14\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 276,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "dataPropertyFacility"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"\" style=\"graphMlID=e2;rounded=0;endArrow=block;strokeColor=#008000;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint as=\"sourcePoint\"/><mxPoint x=\"276.8107910156248\" y=\"0.1803426299535431\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;#34;dialog&amp;#34; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;dataProperty&lt;/span&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;\" vertex=\"1\" connectable=\"0\" parent=\"2\"><mxGeometry x=\"-0.0896\" y=\"3\" relative=\"1\" as=\"geometry\"><mxPoint as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+        "w": 276.8107910156248,
+        "h": 1,
+        "aspect": "fixed",
+        "title": "dataProperty"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"&amp;quot;value&amp;quot;^^datatype\" style=\"text;html=1;spacing=0;align=left;fontFamily=dialog;fontSize=16;fontStyle=0;fontColor=#000000\" vertex=\"1\" parent=\"1\"><mxGeometry y=\"-5.684341886080802e-14\" width=\"143.828125\" height=\"22.84375\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 143.828125,
+        "h": 22.84375,
+        "aspect": "fixed",
+        "title": "datatype"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"DatatypeRestriction\" style=\"graphMlID=n7;shape=parallelogram;fillColor=#ecffec;strokeColor=#000000;strokeWidth=1.0;dashed=1;dashPattern=1 3\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"185.4357493188014\" height=\"43\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 185.4357493188014,
+        "h": 43,
+        "aspect": "fixed",
+        "title": "DatatypeRestriction"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"&lt;http://www.example.com&gt;\" style=\"graphMlID=n2;shape=swimlane;startSize=20;rounded=1;arcSize=5;strokeColor=#666699;strokeWidth=1.0;dashed=1;dashPattern=1 3;align=right;fillColor=#99ccff;gradientColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"470\" height=\"110\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 470,
+        "h": 110,
+        "aspect": "fixed",
+        "title": "ontology"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;Manchester Syntax&lt;/span&gt;&lt;br style=&quot;font-size: 16px&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;additional axioms&lt;/span&gt;&lt;/font&gt;\" style=\"shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#A9C4EB;fillColor=#ccffff;gradientColor=none;align=left;spacingLeft=8;\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"220\" height=\"100\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 220,
+        "h": 100,
+        "aspect": "fixed",
+        "title": "additionalAxioms"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;Annotation:&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;&amp;nbsp; rdfs:label &quot;label&quot;&lt;/span&gt;&lt;/div&gt;\" style=\"shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#A9C4EB;fillColor=#ccffff;gradientColor=none;align=left;spacingLeft=8;\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"220\" height=\"100\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 220,
+        "h": 100,
+        "aspect": "fixed",
+        "title": "annotations"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"SWRL\" style=\"graphMlID=n1;shape=swimlane;startSize=20;rounded=1;arcSize=5;strokeColor=#666666;strokeWidth=1.0;dashed=1;dashPattern=5 2;fillColor=#ebebeb;fontColor=#333333;align=right;spacingRight=10;\" vertex=\"1\" parent=\"1\"><mxGeometry width=\"410\" height=\"100\" as=\"geometry\"/></mxCell><mxCell id=\"3\" value=\"&lt;span style=&quot;&quot;&gt;:followedBy(?x,?x)&amp;nbsp; -&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp;:hasError(?x,&quot;An item cannot be followed by itself&quot;)&lt;/span&gt;\" style=\"text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;\" vertex=\"1\" parent=\"2\"><mxGeometry y=\"35\" width=\"410\" height=\"30\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 410,
+        "h": 100,
+        "aspect": "fixed",
+        "title": "SWRL"
+    },
+    {
+        "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"2\" value=\"Prefixes\" style=\"graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"-4.263256414560601e-14\" y=\"1.1368683772161603e-13\" width=\"356.42\" height=\"81.61\" as=\"geometry\"/></mxCell><mxCell id=\"3\" value=\"&lt;b&gt;:&lt;br&gt;owl:&lt;br&gt;rdfs:&lt;/b&gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;\" vertex=\"1\" parent=\"2\"><mxGeometry x=\"6.416452437349733\" y=\"31.09953721049043\" width=\"50\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"4\" value=\"http://example.com/&lt;br&gt;http://www.w3.org/2002/07/owl#&lt;br&gt;http://www.w3.org/2000/01/rdf-schema#\" style=\"text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;\" vertex=\"1\" parent=\"2\"><mxGeometry x=\"66.41645243734973\" y=\"31.09953721049043\" width=\"280\" height=\"50\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+        "w": 356.41999999999996,
+        "h": 81.6099999999999,
+        "aspect": "fixed",
+        "title": "Prefixes"
+    }
+]

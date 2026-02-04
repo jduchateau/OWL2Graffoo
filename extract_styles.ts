@@ -21,6 +21,8 @@ async function extractStyles() {
             return;
         }
 
+
+
         for (const item of items) {
             const title = item.title;
             const b64 = item.xml;
@@ -52,6 +54,8 @@ async function extractStyles() {
                 continue; // or use decompressed
             }
 
+
+            item.xml = xmlStr;
             // 4. Write outputs
             outputXml += `    '${title}': \`${xmlStr}\`,\n`;
             const styleMatch = xmlStr.match(/style="([^"]*)"/);
@@ -64,8 +68,10 @@ async function extractStyles() {
 
         await writeFile("src/styles_output.js", output);
         console.log("Written to src/styles_output.js");
-        await writeFile("src/styles_xml_output.js", outputXml);
-        console.log("Written to src/styles_xml_output.js");
+
+
+        await writeFile("src/styles.json", JSON.stringify(items));
+        console.log("Written to src/styles.json");
     } catch (err) {
         console.log("Global Error: " + err);
     }

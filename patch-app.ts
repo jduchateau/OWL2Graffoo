@@ -1,6 +1,11 @@
 import { readFile, writeFile, copyFile } from "fs/promises";
+import { $ } from "bun";
 
 const APP_JS_PATH = "drawio/src/main/webapp/js/diagramly/App.js";
+
+const MY_PRECONFIG = "drawio_patch/PreConfig.js"
+const PRECONFIG_DEST = "drawio/src/main/webapp/js/PreConfig.js";
+
 const PLUGIN_SOURCE = "dist/graffoo_plugin.js";
 const PLUGIN_DEST = "drawio/src/main/webapp/plugins/graffoo.js";
 
@@ -13,8 +18,7 @@ async function patchAppJs() {
   // Check and add to pluginRegistry if not present
   if (!content.includes("'graffoo': 'plugins/graffoo.js'")) {
     console.log("➕ Adding graffoo to App.pluginRegistry...");
-    
-    // Find the pluginRegistry object and add the entry
+
     const registryRegex = /(App\.pluginRegistry\s*=\s*{[^}]*)'tags':\s*'plugins\/tags\.js'/;
     if (registryRegex.test(modified)) {
       modified = modified.replace(
@@ -32,8 +36,7 @@ async function patchAppJs() {
   // Check and add to publicPlugin if not present
   if (!content.match(/App\.publicPlugin\s*=\s*\[[^\]]*'graffoo'/)) {
     console.log("➕ Adding graffoo to App.publicPlugin...");
-    
-    // Find the publicPlugin array and add graffoo at the beginning
+
     const publicPluginRegex = /(App\.publicPlugin\s*=\s*\[)\s*\n/;
     if (publicPluginRegex.test(modified)) {
       modified = modified.replace(
@@ -55,11 +58,32 @@ async function patchAppJs() {
   } else {
     console.log("✅ No changes needed - App.js already configured!");
   }
+}
 
-  // Copy plugin file
+async function copyPreConfig() {
+  console.log("🔧 Patching PreConfig.js...");
+  await copyFile(MY_PRECONFIG, PRECONFIG_DEST);
+  console.log(`✅ Copied ${MY_PRECONFIG} to ${PRECONFIG_DEST}`);
+}
+
+async function copyPlugin() {
   console.log("📦 Copying built plugin to plugins directory...");
   await copyFile(PLUGIN_SOURCE, PLUGIN_DEST);
   console.log(`✅ Copied ${PLUGIN_SOURCE} to ${PLUGIN_DEST}`);
 }
 
-patchAppJs().catch(console.error);
+async function rebuildApp() {
+  console.log("🔧 Rebuilding app.min.js...");
+  const antBuild = await $`cd drawio/etc/build && ant -f build.xml app`.quiet();
+  if (antBuild.exitCode !== 0) {
+    throw new Error("ant build failed");
+  }
+  console.log("✅ Rebuilt app.min.js successfully!");
+}
+
+async function patchDrawio() {
+  await Promise.allSettled([patchAppJs(), copyPreConfig(), copyPlugin()]);
+  // await rebuildApp();
+}
+
+patchDrawio().catch(console.error);
