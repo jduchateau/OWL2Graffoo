@@ -4,9 +4,10 @@ await build({
   entrypoints: ["./src/index.js"],
   outdir: "./dist",
   target: "browser",
-  minify: true, // Minify for production
-  sourcemap: "none", // Draw.io doesn't need sourcemaps usually
-  naming: "graffoo_plugin.js", // Output filename
+  format: "iife",
+  minify: false,
+  sourcemap: "none", // Draw.io doesn't use sourcemaps
+  naming: "graffoo_plugin.js",
 });
 
 console.log("✅ Build complete: dist/graffoo_plugin.js");

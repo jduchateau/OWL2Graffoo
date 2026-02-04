@@ -3,30 +3,30 @@
 A [diagrams.net](https://app.diagrams.net/) (draw.io) plugin that imports OWL ontologies (TTL/RDF) and visualises them using the **Graffoo** graphical notation.
 
 ## Features
-- **One-click Import:** Adds an "Import OWL" option to the Extras menu.
-- **Graffoo Styling:** Automatically styles Classes (Yellow), Individuals (Pink), and Datatypes (Green) according to Graffoo specs.
-- **Auto Layout:** Automatically arranges nodes to prevent overlap.
-- **Zero Config:** Runs entirely in the browser.
+Imports OWL ontology definitions with Graffoo visualization directly into diagrams.net (draw.io). It supports the conversion of:
+- `owl:Class`
+   - Subclass
+   - Equivalence
+- `owl:NamedIndividual`
+- `owl:AnnotationProperty`
+- `owl:DataProperty`
+- `owl:ObjectProperty`
+- the prefix table.
+
+After the initial import, users have full control to manually customise the diagram layout.
+Multiple domains/ranges for properties are not supported, only the first one is created.
 
 ## How to Use
 1. **Download:** Get the `graffoo_plugin.js` from the `dist/` folder (or build it yourself).
 2. **Install:**
-   - Open [draw.io](https://app.diagrams.net/).
+   - Open the **draw.io Desktop app** (run with `drawio --enable-plugins`) or a **self-hosted Docker instance** (external plugins are not supported on the online version).
    - Go to **Extras** > **Plugins**.
    - Click **Add** -> **Custom** -> **Select File**.
    - Choose `graffoo_plugin.js`.
 3. **Run:**
-   - Refresh the page (if prompted).
+   - Restart the application or refresh the page.
    - Go to **Extras** > **Import OWL (Graffoo Style)**.
-   - Select your `.owl` or `.ttl` file.
-
-## How it Works
-1. **Bundling:** The plugin uses `N3.js` bundled via **Bun** to parse RDF files client-side.
-2. **Mapping:** It iterates through the RDF triples:
-   - `owl:Class` → Yellow Rectangle
-   - `owl:NamedIndividual` → Pink Ellipse
-   - Object Properties → Solid Arrows
-3. **Rendering:** It uses the internal `mxGraph` API (exposed by draw.io) to insert vertices and edges directly into the canvas.
+   - Select your `.ttl` file.
 
 ## Development
 

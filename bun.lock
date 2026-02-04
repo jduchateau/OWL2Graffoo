@@ -5,16 +5,30 @@
     "": {
       "name": "owl-drawio",
       "dependencies": {
-        "n3": "^1.17.2",
+        "@rdfjs/data-model": "^2.0.0",
+        "@rdfjs/prefix-map": "^0.1.2",
+        "@zazuko/prefixes": "^2.6.1",
+        "n3": "^1.26.0",
         "rdf-namespaces": "^1.16.0",
       },
       "devDependencies": {
+        "@types/n3": "^1.26.1",
         "bun-types": "latest",
       },
     },
   },
   "packages": {
+    "@rdfjs/data-model": ["@rdfjs/data-model@2.1.1", "", { "bin": { "rdfjs-data-model-test": "bin/test.js" } }, "sha512-6mcOI4DjIPS6MOZw23H8oAdujHCk5gippVNQ7mKwliYTvTNh+uqRM91B9OLqhoAoNcQ3t49Dx2ooIMRG9/6ooA=="],
+
+    "@rdfjs/prefix-map": ["@rdfjs/prefix-map@0.1.2", "", { "dependencies": { "readable-stream": "^4.3.0" } }, "sha512-qapFYVPYyYepg0sFy7T512667iZsN9a3RNcyNBTBV+O8wrU3v/URQZOipCTNrEm1BXzZ7KCK1Yi8HrE1y+uRuQ=="],
+
+    "@rdfjs/types": ["@rdfjs/types@2.0.1", "", { "dependencies": { "@types/node": "*" } }, "sha512-uyAzpugX7KekAXAHq26m3JlUIZJOC0uSBhpnefGV5i15bevDyyejoB7I+9MKeUrzXD8OOUI3+4FeV1wwQr5ihA=="],
+
+    "@types/n3": ["@types/n3@1.26.1", "", { "dependencies": { "@rdfjs/types": "*", "@types/node": "*" } }, "sha512-TilYHzpU6ecXVJAbV+6o17Z8ZkWLWx6ZJD3IluaU4RiGHxqjU2or9fopxFHS6iXS6qcl5Mg1K3wSx9L8xxJaJQ=="],
+
     "@types/node": ["@types/node@25.2.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-DZ8VwRFUNzuqJ5khrvwMXHmvPe+zGayJhr2CDNiKB1WBE1ST8Djl00D0IC4vvNmHMdj6DlbYRIaFE7WHjlDl5w=="],
+
+    "@zazuko/prefixes": ["@zazuko/prefixes@2.6.1", "", {}, "sha512-fbOadP7twxt0ZYT9mgIC+xQMk6f3pYYLI5a/2UJ/mc/ygqb/NoVv2ryK3lTtoi74xwkdpUeDwIuFQSosowzUgg=="],
 
     "abort-controller": ["abort-controller@3.0.0", "", { "dependencies": { "event-target-shim": "^5.0.0" } }, "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg=="],
 
