@@ -1,0 +1,82 @@
+image: oven/bun:latest
+
+stages:
+  - build
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+# Build and patch the plugin
+build:
+  stage: build
+  before_script:
+    # Install Java and Ant for drawio build
+    - apt-get update && apt-get install -y default-jdk ant
+    - bun install
+  script:
+    # Build the plugin
+    - bun run build
+    # Patch the drawio instance
+    - bun run patch
+  artifacts:
+    paths:
+      - dist/
+      - drawio/src/main/webapp/
+    expire_in: 1 hour
+
+# Deploy to GitLab Pages
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    # Create public directory for GitLab Pages
+    - mkdir -p public
+    
+    # Copy essential HTML files
+    - cp drawio/src/main/webapp/index.html public/
+    - cp drawio/src/main/webapp/clear.html public/
+    - cp drawio/src/main/webapp/service-worker.js public/
+    - cp drawio/src/main/webapp/workbox-*.js public/ || true
+    
+    # Copy all necessary directories
+    - cp -r drawio/src/main/webapp/js public/
+    - cp -r drawio/src/main/webapp/images public/
+    - cp -r drawio/src/main/webapp/img public/
+    - cp -r drawio/src/main/webapp/libraries public/
+    - cp -r drawio/src/main/webapp/mxgraph public/
+    - cp -r drawio/src/main/webapp/plugins public/
+    - cp -r drawio/src/main/webapp/resources public/
+    - cp -r drawio/src/main/webapp/shapes public/
+    - cp -r drawio/src/main/webapp/stencils public/
+    - cp -r drawio/src/main/webapp/styles public/
+    - cp -r drawio/src/main/webapp/templates public/
+    
+    # Copy math4 if exists
+    - cp -r drawio/src/main/webapp/math4 public/ || true
+    
+    # Copy connect if exists
+    - cp -r drawio/src/main/webapp/connect public/ || true
+    
+    # Copy fonts CSS if exists
+    - cp drawio/src/main/webapp/export-fonts.css public/ || true
+    
+    # Remove unwanted HTML files
+    - rm -f public/dropbox.html
+    - rm -f public/github.html
+    - rm -f public/gitlab.html
+    - rm -f public/onedrive3.html
+    - rm -f public/teams.html
+    - rm -f public/vsdxImporter.html
+    - rm -f public/open.html
+    
+    # Display deployment info
+    - echo "✅ GitLab Pages deployment ready"
+    - echo "📦 Total size:"
+    - du -sh public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
