@@ -42,15 +42,15 @@ pages:
     
     # Copy all necessary directories
     - cp -r drawio/src/main/webapp/js public/
-    - cp -r drawio/src/main/webapp/images public/
-    - cp -r drawio/src/main/webapp/img public/
-    - cp -r drawio/src/main/webapp/libraries public/
+    - cp -r drawio/src/main/webapp/images public/ 
+    - cp -r drawio/src/main/webapp/img public/ 
+    - cp -r drawio/src/main/webapp/libraries public/ || true
     - cp -r drawio/src/main/webapp/mxgraph public/
     - cp -r drawio/src/main/webapp/plugins public/
-    - cp -r drawio/src/main/webapp/resources public/
-    - cp -r drawio/src/main/webapp/shapes public/
-    - cp -r drawio/src/main/webapp/stencils public/
-    - cp -r drawio/src/main/webapp/styles public/
+    - cp -r drawio/src/main/webapp/resources public/ 
+    - cp -r drawio/src/main/webapp/shapes public/ 
+    - cp -r drawio/src/main/webapp/stencils public/ 
+    - cp -r drawio/src/main/webapp/styles public/ 
     - cp -r drawio/src/main/webapp/templates public/
     
     # Copy math4 if exists
