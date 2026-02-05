@@ -83,7 +83,7 @@ async function rebuildApp() {
 
 async function patchDrawio() {
   await Promise.allSettled([patchAppJs(), copyPreConfig(), copyPlugin()]);
-  // await rebuildApp();
+  await rebuildApp();
 }
 
 patchDrawio().catch(console.error);
