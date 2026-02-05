@@ -15,6 +15,5 @@ window.DRAWIO_CONFIG = {
 };
 
 urlParams['sync'] = 'manual';
-urlParams['dev'] = '1';
 urlParams['demo'] = '1';
 urlParams['p'] = 'graffoo';
