@@ -330,7 +330,7 @@ function drawOntology(graph, store, prefixMap) {
         }
 
         processArrowEntities(OWL.ObjectProperty, GRAFFOO_STYLES.objectProperty);
-        processArrowEntities(OWL.DatatypeProperty, GRAFFOO_STYLES.dataProperty, dataProperties, umlDataProperties);
+        processArrowEntities(OWL.DatatypeProperty, GRAFFOO_STYLES.dataProperty, umlDataProperties);
         processArrowEntities(OWL.AnnotationProperty, GRAFFOO_STYLES.annotationProperty);
 
         /** Draw relations between entities (subClassOf, equivalentClass)
