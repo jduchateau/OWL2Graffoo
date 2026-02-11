@@ -1,4 +1,4 @@
-image: oven/bun:slim
+image: oven/bun:debian
 
 stages:
   - build
@@ -12,7 +12,7 @@ build:
   stage: build
   before_script:
     # Install Java and Ant for drawio build
-    - apt-get update && apt-get install -y default-jdk ant
+    - sh -c "apt-get update && apt-get install -y default-jdk ant"
     - bun install
   script:
     # Build the plugin
