@@ -81,8 +81,36 @@ async function rebuildApp() {
   console.log("✅ Rebuilt app.min.js successfully!");
 }
 
+async function changeSupportUrl() {
+  console.log("🔧 Changing support URL...");
+  const oldUrl = "https://github.com/jgraph/drawio/wiki/Getting-Support";
+  const newUrl = "https://github.com/jduchateau/graffoo-import-drawio-plugin/issues";
+  const filePath = "drawio/src/main/webapp/js/diagramly/Menus.js";
+
+  const content = await readFile(filePath, "utf-8");
+  const modified = content.replace(oldUrl, newUrl);
+  await writeFile(filePath, modified, "utf-8");
+
+  console.log("✅ Support URL changed successfully!");
+}
+
+async function patchVersion() {
+  console.log("🔧 Patching version...");
+  const versionFile = "drawio/VERSION";
+  const versionContent = await readFile(versionFile, "utf-8");
+  const trimmedVersion = versionContent.trim();
+  const versionSuffix = "+graffoo";
+  if (trimmedVersion.endsWith(versionSuffix)) {
+    console.log(`✓ Version already ends with ${versionSuffix}`);
+    return;
+  }
+  const modifiedVersion = trimmedVersion + versionSuffix;
+  await writeFile(versionFile, modifiedVersion, "utf-8");
+  console.log("✅ Version patched successfully!");
+}
+
 async function patchDrawio() {
-  await Promise.allSettled([patchAppJs(), copyPreConfig(), copyPlugin()]);
+  await Promise.allSettled([patchAppJs(), copyPreConfig(), copyPlugin(), changeSupportUrl(), patchVersion()]);
   await rebuildApp();
 }
 
