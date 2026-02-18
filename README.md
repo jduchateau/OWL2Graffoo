@@ -77,6 +77,10 @@ bun run start
 
 The output file will be at `dist/graffoo_plugin.js`.
 
+## Legend
+
+![Legend](./Graffoo-compact-legend.svg)
+
 ## License
 
 This project is licensed under the Apache 2.0 license, (see [LICENSE](LICENSE)).
