@@ -7,7 +7,7 @@ async function extractStyles() {
 
     try {
         console.log("Starting extraction...");
-        const content = await readFile("src/Graffoo.xml", "utf-8");
+        const content = await readFile("styles/Graffoo.xml", "utf-8");
         console.log(`File read. Length: ${content.length}`);
 
         // Remove wrapper

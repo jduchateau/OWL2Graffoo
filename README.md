@@ -27,6 +27,7 @@ You can re-export the diagram position data as RDF.
 Before importing it again, merge it with your main ontology, to also restore the layout.
 
 ```turtle
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix draw: <http://drawio.org#> .
 ```
 
@@ -75,3 +76,11 @@ bun run start
 ```
 
 The output file will be at `dist/graffoo_plugin.js`.
+
+## License
+
+This project is licensed under the Apache 2.0 license, (see [LICENSE](LICENSE)).
+
+The submodule `drawio` is licensed under the Apache 2.0 license, (see [drawio/LICENSE](drawio/LICENSE)).
+
+The submodule `styles` is licensed under the Apache 2.0 license, (see [styles/LICENSE](styles/LICENSE)).
