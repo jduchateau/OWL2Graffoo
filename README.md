@@ -1,6 +1,8 @@
-# Draw.io Graffoo Importer
+# OWL2Graffoo: A Draw.io plugin Graffoo Importer
 
-A [diagrams.net](https://app.diagrams.net/) (draw.io) plugin that imports OWL ontologies (TTL/RDF) and visualises them using the [**Graffoo** graphical notation](https://essepuntato.it/graffoo/) (created by Silvio Peroni) and some UML-like extensions we propose for compactness.
+A [diagrams.net](https://app.diagrams.net/) (formerly draw.io) plugin that imports OWL ontologies (TTL/RDF) and visualises them using the [Graffoo graphical notation](https://essepuntato.it/graffoo/) and some UML-like extensions we propose for compactness.
+
+An online version can be found at: <https://owl2graffoo-49bbf6.gitlabpages.uliege.be>
 
 ## Features
 
@@ -33,7 +35,7 @@ Before importing it again, merge it with your main ontology, to also restore the
 
 ## How to Use
 
-Go to <https://graffoo-import-drawio-plugin-97ac63.gitlabpages.uliege.be> or follow these steps to install the plugin locally:
+Go to <https://owl2graffoo-49bbf6.gitlabpages.uliege.be> or follow these steps to install the plugin locally:
 
 1. **Download:** Get the `graffoo_plugin.js` from the `dist/` folder (or build it yourself).
 2. **Install:**
@@ -48,9 +50,9 @@ Go to <https://graffoo-import-drawio-plugin-97ac63.gitlabpages.uliege.be> or fol
 
 ### Position Export/Import Workflow
 
-1. **Import an ontology:** Use **Import OWL (Graffoo Style)** to load your ontology
+1. **Import an ontology:** Use **Extras> Import OWL (Graffoo Style)** to load your ontology
 2. **Arrange the diagram:** Manually position the objects as desired
-3. **Export with positions:** Use **Export OWL with Positions** to save a `.ttl` file with position data
+3. **Export with positions:** Use **Extras> Export OWL with Positions** to save a `.ttl` file with position data
 4. **Re-import:** Next time you import the same ontology (with position data), objects will be placed at their saved positions
 
 The position data is stored as RDF triples using these properties:
