@@ -1,0 +1,89 @@
+<mxfile host="owl2graffoo-49bbf6.gitlabpages.uliege.be" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6+graffoo">
+  <diagram name="Page-1" id="Eyxq2NQsM3-fYdh2xtJk">
+    <mxGraphModel dx="1385" dy="744" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="O0uoF61MYSst45itjoob-1" parent="1" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#FDFEEC;strokeColor=#C5C796;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1;textShadow=1;fontFamily=Helvetica;" value="Graffoo-compact legend" vertex="1">
+          <mxGeometry height="312" width="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-2" parent="O0uoF61MYSst45itjoob-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#6B6B6B;fontSize=18;fontFamily=Helvetica;shadow=0;" value="child class" vertex="1">
+          <mxGeometry height="40" width="295" x="151.5" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-3" parent="O0uoF61MYSst45itjoob-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="Sub class of" vertex="1">
+          <mxGeometry height="30" width="105" x="16.5" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-4" parent="O0uoF61MYSst45itjoob-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#6B6B6B;fontSize=18;fontFamily=Helvetica;shadow=0;" value="parent class" vertex="1">
+          <mxGeometry height="40" width="295" x="151.5" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-5" edge="1" parent="O0uoF61MYSst45itjoob-1" source="O0uoF61MYSst45itjoob-2" style="endArrow=block;html=1;textDirection=ltr;rounded=0;dashed=1;endFill=1;dashPattern=1 1;" target="O0uoF61MYSst45itjoob-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="386.5" y="323" as="sourcePoint" />
+            <mxPoint x="534.45" y="323" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="a class uml variant" id="O0uoF61MYSst45itjoob-6">
+          <mxCell parent="O0uoF61MYSst45itjoob-1" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;html=1;shape=swimlane;startSize=20;" vertex="1">
+            <mxGeometry height="50" width="340" x="156.5" y="45" as="geometry">
+              <mxRectangle height="30" width="150" x="818.73" y="147" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="datatype property: range (datatype or datatype restriction)" id="O0uoF61MYSst45itjoob-7">
+          <mxCell parent="O0uoF61MYSst45itjoob-6" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" y="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="O0uoF61MYSst45itjoob-8" connectable="0" parent="O0uoF61MYSst45itjoob-1" style="group" value="" vertex="1">
+          <mxGeometry height="83.37" width="310.45000000000005" x="726.5" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-9" edge="1" parent="O0uoF61MYSst45itjoob-8" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="310.45000000000005" y="0.37000000000000455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-10" connectable="0" parent="O0uoF61MYSst45itjoob-9" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-family: dialog; font-size: 16px;&quot;&gt;parent property &lt;br&gt;(either object, data or annotation property)&lt;br&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0174" y="2" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-11" edge="1" parent="O0uoF61MYSst45itjoob-8" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0.25" y="83.37" as="sourcePoint" />
+            <mxPoint x="310.45000000000005" y="83.37" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-12" connectable="0" parent="O0uoF61MYSst45itjoob-11" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-family: dialog; font-size: 16px;&quot;&gt;child property &lt;br&gt;(either object, data or annotation property)&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0174" y="2" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-13" edge="1" parent="O0uoF61MYSst45itjoob-8" style="endArrow=block;html=1;textDirection=ltr;rounded=0;dashed=1;endFill=1;dashPattern=1 1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="150.45000000000005" y="65.37" as="sourcePoint" />
+            <mxPoint x="150.45000000000005" y="20.370000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-14" parent="O0uoF61MYSst45itjoob-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="Sub property of" vertex="1">
+          <mxGeometry height="30" width="140" x="530" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-15" edge="1" parent="O0uoF61MYSst45itjoob-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;strokeColor=#EDEDED;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="136" y="298" as="sourcePoint" />
+            <mxPoint x="136" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-16" edge="1" parent="O0uoF61MYSst45itjoob-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;strokeColor=#EDEDED;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="698" y="296" as="sourcePoint" />
+            <mxPoint x="698" y="123" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0uoF61MYSst45itjoob-17" parent="O0uoF61MYSst45itjoob-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;span style=&quot;font-size: 18px; text-align: center;&quot;&gt;Class&lt;/span&gt;&lt;br style=&quot;font-size: 18px; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 18px; text-align: center;&quot;&gt;uml variant&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="16.5" y="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

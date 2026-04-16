@@ -45,7 +45,7 @@ Go to <https://owl2graffoo-49bbf6.gitlabpages.uliege.be> or follow these steps t
    - Choose `graffoo_plugin.js`.
 3. **Run:**
    - Restart the application or refresh the page.
-   - **Import:** Go to **Extras** > **Import OWL (Graffoo Style)** and select your `.ttl` file.
+   - **Import:** Go to **Extras** > **Import OWL (Graffoo Style)** and select your ontology file (in one of the supported formats by [N3.js](https://github.com/rdfjs/N3.js): Turtle, TriG, N-Triples, N-Quads, and Notation3).
    - **Export:** Go to **Extras** > **Export OWL with Positions** to save the diagram with position information.
 
 ### Position Export/Import Workflow
@@ -61,7 +61,21 @@ The position data is stored as RDF triples using these properties:
 - `draw:width` - Width of the object
 - `draw:height` - Height of the object
 
+## Limitations
+
+- Multiple Domains/Ranges: Multiple domains or ranges for properties are not fully supported; only the first one encountered in the ontology is created in the diagram.
+
+- Named Individuals: owl:NamedIndividual parsing is currently experimental (🧪 not fully tested).
+
+- Facility Properties: Graffoo's "facility" properties (which use dotted lines to illustrate informal or relaxed property usage for human comprehension) are not generated automatically. Because they represent tacit knowledge rather than strict formal OWL axioms, they must be added manually by the user.
+
+- The position can be stored only once per class. Reusing multiple time the same object properties targets will result in multiple elements (we needed that) be drawn at the same position (future work would be to support one position per property).
+
 ## Development
+
+> [!WARNING]
+> At this time, there is no future work planned for extending this plugin.
+> We will come back to it as our needs evolve, but we do not have a roadmap for it at the moment.
 
 Prerequisite: [Bun](https://bun.sh/) installed.
 To rebuild drawio, `java` and `ant` are also required.

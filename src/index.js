@@ -65,7 +65,7 @@ Draw.loadPlugin(function (app) {
     app.actions.addAction('importGraffoo', function () {
         const input = document.createElement('input');
         input.setAttribute('type', 'file');
-        input.setAttribute('accept', '.ttl,.owl,.rdf,.nt');
+        input.setAttribute('accept', '.ttl,.nt,.nq,.n3,.trig');
 
         input.onchange = (e) => {
             const file = e.target.files[0];
