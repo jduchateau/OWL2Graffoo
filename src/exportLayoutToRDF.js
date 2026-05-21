@@ -14,7 +14,7 @@ export function exportLayoutToRDF(graph) {
     const model = graph.getModel();
     const parent = graph.getDefaultParent();
     const writer = new Writer({ prefixes: {
-            draw: 'https://w3id.org/dre/drawio#',
+            draw: 'https://w3id.org/dre/draw#',
             xsd: 'http://www.w3.org/2001/XMLSchema#'
         }});
 

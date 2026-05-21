@@ -30,7 +30,7 @@ Before importing it again, merge it with your main ontology, to also restore the
 
 ```turtle
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix draw: <http://drawio.org#> .
+@prefix draw: <https://w3id.org/dre/draw#> .
 ```
 
 ## How to Use
